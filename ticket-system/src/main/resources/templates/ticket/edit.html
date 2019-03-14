@@ -24,7 +24,6 @@
             <option th:each="category : ${categories}"
                     th:text="${category.name}"
                     th:value="${category.id}"></option>
-                    <!--th:selected="${ticket.isMyCategory(category)}"-->
         </select>
     </div>
     <input type="hidden" th:value="${ticket.id}" name="id" />
